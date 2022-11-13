@@ -2,5 +2,5 @@
 
 ### subindo o servidor PHP
 
-<code> php -S localhost: port;
+<code> php -S localhost: port; </code>
 
