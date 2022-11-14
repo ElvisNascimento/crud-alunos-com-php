@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `db_alunos` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `db_alunos`;
 -- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
 --
 -- Host: localhost    Database: db_alunos
@@ -25,10 +27,10 @@ DROP TABLE IF EXISTS `alunos`;
 CREATE TABLE `alunos` (
   `idalunos` int NOT NULL AUTO_INCREMENT,
   `matricula` varchar(45) NOT NULL,
-  `name` varchar(45) NOT NULL,
+  `nome` varchar(45) NOT NULL,
   `cidade` varchar(45) NOT NULL,
   PRIMARY KEY (`idalunos`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +39,7 @@ CREATE TABLE `alunos` (
 
 LOCK TABLES `alunos` WRITE;
 /*!40000 ALTER TABLE `alunos` DISABLE KEYS */;
-INSERT INTO `alunos` VALUES (1,'001','Alexandre','fortaleza'),(2,'002','Erika','fortaleza'),(3,'003','Davi','fortaleza'),(4,'004','XeroVerde','fortaleza'),(5,'005','Elias','fortaleza'),(6,'006','Adriely','fortaleza'),(7,'007','Mario','fortaleza'),(8,'008','Elvis','fortaleza'),(9,'009','Alicia','fortaleza'),(10,'010','Italo','fortaleza'),(11,'011','Talyson','fortaleza'),(12,'012','Camila','fortaleza'),(13,'013','Guilherme','fortaleza'),(14,'014','Saor','fortaleza'),(15,'015','Nathan','fortaleza'),(16,'016','Carlos','fortaleza'),(17,'017','Ciro','fortaleza'),(18,'018','Diene','fortaleza'),(19,'019','Sergio','fortaleza'),(20,'020','Neville','fortaleza'),(21,'021','Samuel','fortaleza'),(22,'022','Bruno','fortaleza'),(23,'023','Mateus','fortaleza'),(24,'024','Marcelo','fortaleza');
+INSERT INTO `alunos` VALUES (1,'001','Alexandre','fortaleza'),(2,'002','Erika','fortaleza'),(3,'003','Davi','fortaleza'),(4,'004','XeroVerde','fortaleza'),(5,'005','Elias','fortaleza'),(6,'006','Adriely','fortaleza'),(7,'007','Mario','fortaleza'),(8,'008','Elvis','fortaleza'),(9,'009','Alicia','fortaleza'),(10,'010','Italo','fortaleza'),(11,'011','Talyson','fortaleza'),(12,'012','Camila','fortaleza'),(13,'013','Guilherme','fortaleza'),(14,'014','Saor','fortaleza'),(15,'015','Nathan','fortaleza'),(16,'016','Carlos','fortaleza'),(17,'017','Ciro','fortaleza'),(18,'018','Diene','fortaleza'),(19,'019','Sergio','fortaleza'),(20,'020','Neville','fortaleza'),(21,'021','Samuel','fortaleza'),(22,'022','Bruno','fortaleza'),(23,'023','Mateus','fortaleza'),(24,'024','Marcelo','fortaleza'),(46,'026','lora','Fortaleza'),(47,'1231','allan','adfadfadf'),(48,'1244134','lorao dc','Fortaleza');
 /*!40000 ALTER TABLE `alunos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-13 12:14:16
+-- Dump completed on 2022-11-14 11:02:47
